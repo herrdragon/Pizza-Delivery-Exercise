@@ -8,7 +8,7 @@ Here are some examples:
 * `^>v<` delivers pizzas to four houses in a square; the house at the starting/ending location ends up with two pizzas.
 * `^v^v^v^v^v` delivers a bunch of pizzas to some very lucky people at only two houses.
 
-Given the string of dispatcher inputs in [this file](https://gist.github.com/mikedelorenzo-koneksa/3d273f862e919782a181c28ef5f50f54#file-pizzadeliveryinput-txt), how many houses receive at least one pizza?
+Given the string of dispatcher inputs in [this file](https://raw.githubusercontent.com/herrdragon/Pizza-Delivery-Exercise/main/steps.txt), how many houses receive at least one pizza?
 
 ## Part 2
 The next day, to speed up the process, the delivery person rents a pizza-delivering goat. She and the goat begin at the same starting location, and they both deliver a pizza to this starting house. She and the goat then take turns moving based on the dispatcher's instructions.
@@ -19,12 +19,19 @@ Here are some examples:
 * `^>v<` now delivers pizzas to three houses; The delivery person and the goat both end up back where they started.
 * `^v^v^v^v^v` now delivers pizzas to 11 houses; The delivery person treks north and the goat treks south.
 
-Given the same string of dispatcher inputs as in [Part 1](https://gist.github.com/mikedelorenzo-koneksa/3d273f862e919782a181c28ef5f50f54#part-1), how many houses receive at least one pizza?
+Given the same string of dispatcher inputs as in [Part 1](#part-1), how many houses receive at least one pizza?
 
 ## My Solution
 I implemented a readStream in NodeJs to handle the infinite orders the delivery person/goat recieved.
-Running
+
+` For Part 1 run:`
 ```
 node index.js
 ```
-will print some instructions on the terminal. Follow the instructions to read a file with delivery orders.
+` For Part 2 run:`
+```
+node index2.js
+```
+You will see some instructions on the terminal. Follow the instructions to read a file with delivery orders.
+
+See [Here](https://www.digitalocean.com/community/tutorials/trashed--how-to-work-with-files-using-streams-in-node-js) where I got the Node stream part for a more in-depth explanation
